@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <center>
+            <header>
+        <h1>Javascript string methods and loops</h1>
+        <p>numbers from 1 to 10</p>
+        <p>click the button  to change to a random number from one to ten </p>
+        <p id="result" style="background-color: yellow;"></p>
+        <button onclick="randomvalue()" style="background-color: blue;">randomvalue</button>
+        <script>
+            for (i = 1;i < 11; i++){
+              number += i + '<br>' ;  
+            }
+            function randomvalue(){
+            document.getElementById('result').innerHTML = 'the random value is '+ Math.round(Math.random(0,1) * 10) 
+            }
+        </script>
+       </center>
+    </body>
+</html>
